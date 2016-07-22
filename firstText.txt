@@ -1,1 +1,11 @@
-My first text file
+My first text file.
+
+	adding few more stuff to check.
+	
+	COMMANDS USED:
+		git add <<filename>>
+		git status
+		git commit -m "<<message>>"
+		git status
+		git log
+		
