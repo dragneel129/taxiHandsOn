@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>inside header</title>
+<style type="text/css">
+.inline{
+  display: inline-block;
+}
+</style>
+</head>
+<body>
+<a href="BookCab.jsp" class="inline">Book Cab</a>
+<a href="#" class="inline">My Trips</a>
+<a href="RateCard.jsp" class="inline">Rate Card</a>
+<a href="#" class="inline">Customer Care</a>
+<a href="index.jsp" class="inline">Logout</a>
+
+<%  String userName = request.getParameter("email");
+  pageContext.setAttribute("currUser", userName, PageContext.SESSION_SCOPE);
+%>
+<div style="float: right;">
+	<p>Welcome </p>${currUser}
+</div>
+</body>
+</html>
